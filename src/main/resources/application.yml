@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  datasource:
+    url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: yjc19418
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/yjc/mmall/mapper/xml/*.xml
+
+server:
+  port: 8080
