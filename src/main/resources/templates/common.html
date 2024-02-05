@@ -134,9 +134,9 @@
 <!--                    <span th:text="${cartList.size()}"></span>-->
 <!--                    ]-->
 
-                    购物车 [
-                    <span th:text="${cartList.size()}"></span>
-                    ]
+<!--                    购物车 [-->
+<!--                    <span th:text="${cartList.size()}"></span>-->
+<!--                    ]-->
                 </div>
             </a>
 
@@ -150,11 +150,11 @@
 <!--                        <div class="price"><font color="#ff4e00" th:text="'￥'+${cart.price}"></font> X <span class="quantity" th:text="${cart.quantity}"></span>  =  <span class="cost" th:text="${cart.cost}"></span></div>-->
 <!--                    </li>-->
 
-                    <li th:each="cart:${cartList}">
-                        <div class="img"><a><img th:src="'/images/'+${cart.fileName}" width="58" height="58" /></a></div>
-                        <div class="name"><a th:text="${cart.name}"></a></div>
-                        <div class="price"><font color="#ff4e00" th:text="'￥'+${cart.price}"></font> X <span class="quantity" th:text="${cart.quantity}"></span>  =  <span class="cost" th:text="${cart.cost}"></span></div>
-                    </li>
+<!--                    <li th:each="cart:${cartList}">-->
+<!--                        <div class="img"><a><img th:src="'/images/'+${cart.fileName}" width="58" height="58" /></a></div>-->
+<!--                        <div class="name"><a th:text="${cart.name}"></a></div>-->
+<!--                        <div class="price"><font color="#ff4e00" th:text="'￥'+${cart.price}"></font> X <span class="quantity" th:text="${cart.quantity}"></span>  =  <span class="cost" th:text="${cart.cost}"></span></div>-->
+<!--                    </li>-->
                 </ul>
                 <div class="price_sum">共计&nbsp;<span id="totalCost"></span></div>
                 <div class="price_a"><a href="/cart/get">去结算</a></div>
