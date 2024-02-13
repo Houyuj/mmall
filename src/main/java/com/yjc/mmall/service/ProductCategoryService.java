@@ -1,5 +1,6 @@
 package com.yjc.mmall.service;
 
+import com.yjc.mmall.entity.Product;
 import com.yjc.mmall.entity.ProductCategory;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.yjc.mmall.vo.ProductCategoryVO;
@@ -16,4 +17,5 @@ import java.util.List;
  */
 public interface ProductCategoryService extends IService<ProductCategory> {
     public List<ProductCategoryVO> buildProductCategoryMenu();
+    public List<ProductCategoryVO> findAllProductByCategoryLevelOne();
 }
