@@ -11,7 +11,7 @@
  Target Server Version : 50744 (5.7.44)
  File Encoding         : 65001
 
- Date: 05/02/2024 22:25:29
+ Date: 14/02/2024 17:19:08
 */
 
 SET NAMES utf8mb4;
@@ -34,11 +34,12 @@ CREATE TABLE `cart`  (
   INDEX `userId`(`user_id`) USING BTREE,
   CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cart
 -- ----------------------------
+INSERT INTO `cart` VALUES (6, 734, 3, 459, 61, '2024-02-14 00:19:00', '2024-02-14 00:19:00');
 
 -- ----------------------------
 -- Table structure for order_detail
@@ -100,7 +101,7 @@ CREATE TABLE `product`  (
 -- Records of product
 -- ----------------------------
 INSERT INTO `product` VALUES (733, '香奈儿', '好闻的香水！！！', 152, 1, 548, 654, 655, 'baby_1.jpg');
-INSERT INTO `product` VALUES (734, '洗面奶', '', 153, 75, 548, 654, 655, 'baby_2.jpg');
+INSERT INTO `product` VALUES (734, '洗面奶', '', 153, 7, 548, 654, 655, 'baby_2.jpg');
 INSERT INTO `product` VALUES (735, '啫喱水', '', 152, 948, 548, 654, 655, 'baby_3.jpg');
 INSERT INTO `product` VALUES (736, '香水', '', 152, 984, 548, 654, 655, 'baby_4.jpg');
 INSERT INTO `product` VALUES (737, '香水', '', 152, 111, 548, 654, 655, 'baby_5.jpg');

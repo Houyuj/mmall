@@ -104,6 +104,7 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.yjc.mmall.MmallApplication</mainClass>
+<!--                    AI说最好移除下面这行代码或者把它改成false-->
                     <skip>true</skip>
                 </configuration>
                 <executions>
@@ -116,14 +117,18 @@
                 </executions>
             </plugin>
         </plugins>
-<!--        <resources>-->
-<!--            <resource>-->
-<!--                <directory>src/main/java</directory>-->
-<!--                <includes>-->
-<!--                    <include>**/*.xml</include>-->
-<!--                </includes>-->
-<!--            </resource>-->
-<!--        </resources>-->
+        <resources>
+<!--            手动补上了默认的resource路径，可能可以？-->
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
