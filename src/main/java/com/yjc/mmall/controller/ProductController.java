@@ -73,9 +73,7 @@ public class ProductController {
         }else{
             //登录用户
             //查询该用户的购物车记录
-            QueryWrapper<Cart> queryWrapper1 = new QueryWrapper<>();
-            queryWrapper1.eq("user_id",user.getId());
-            modelAndView.addObject("cartList",this.cartService.list(queryWrapper1));
+            modelAndView.addObject("cartList",this.cartService.findVOListByUserId(user.getId()));
         }
         //封装商品分类菜单
         modelAndView.addObject("list",this.productCategoryService.buildProductCategoryMenu());
@@ -108,9 +106,7 @@ public class ProductController {
         }else{
             //登录用户
             //查询该用户的购物车记录
-            QueryWrapper<Cart> queryWrapper1 = new QueryWrapper<>();
-            queryWrapper1.eq("user_id",user.getId());
-            modelAndView.addObject("cartList",this.cartService.list(queryWrapper1));
+            modelAndView.addObject("cartList",this.cartService.findVOListByUserId(user.getId()));
         }
         //封装商品分类菜单
         modelAndView.addObject("list",this.productCategoryService.buildProductCategoryMenu());
@@ -139,9 +135,7 @@ public class ProductController {
         }else{
             //登录用户
             //查询该用户的购物车记录
-            QueryWrapper<Cart> queryWrapper1 = new QueryWrapper<>();
-            queryWrapper1.eq("user_id",user.getId());
-            modelAndView.addObject("cartList",this.cartService.list(queryWrapper1));
+            modelAndView.addObject("cartList",this.cartService.findVOListByUserId(user.getId()));
         }
         //封装商品分类菜单
         modelAndView.addObject("list",this.productCategoryService.buildProductCategoryMenu());

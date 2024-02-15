@@ -99,7 +99,7 @@
                             <td width="25%">总价</td>
                         </tr>
 
-                        <tr th:each="orderDetail:${orders.getOrderDetailList()}">
+                        <tr th:each="orderDetail:${orders.getOrderDetailVOList()}">
                             <td th:text="${orderDetail.name}"></td>
                             <td>
                                 <img th:src="'/images/'+${orderDetail.fileName}" width="50"

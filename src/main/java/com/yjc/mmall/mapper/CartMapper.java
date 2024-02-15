@@ -12,5 +12,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2024-02-02
  */
 public interface CartMapper extends BaseMapper<Cart> {
-
+    public int update(Integer id, Integer quantity, Float cost);
+    public Float getCostByUserId(Integer id);
 }

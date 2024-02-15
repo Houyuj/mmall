@@ -129,6 +129,7 @@
         <div class="i_car">
             <a href="/cart/findAllCart">
                 <div class="car_t">
+                    <a href="/cart/get">
 
 <!--                    购物车 [-->
 <!--                    <span th:text="${cartList.size()}"></span>-->
@@ -137,11 +138,12 @@
                     购物车 [
                     <span th:text="${cartList.size()}"></span>
                     ]
+                    </a>
                 </div>
             </a>
 
             <div class="car_bg">
-                <div class="un_login">我的购物车</div>
+                <div class="un_login"><a href="/cart/get">我的购物车</a></div>
                 <ul class="cars">
 
 <!--                    <li th:each="cart:${cartList}">-->

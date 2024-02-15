@@ -54,9 +54,7 @@ public class ProductCategoryController {
         }else{
             //登录用户
             //查询该用户的购物车记录
-            QueryWrapper<Cart> queryWrapper = new QueryWrapper<>();
-            queryWrapper.eq("user_id",user.getId());
-            modelAndView.addObject("cartList",this.cartService.list(queryWrapper));
+            modelAndView.addObject("cartList",this.cartService.findVOListByUserId(user.getId()));
         }
         return modelAndView;
     }

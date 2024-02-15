@@ -12,7 +12,7 @@ public class FilterConfiguration {
     public FilterRegistrationBean registrationBean(){
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new UserFilter());
-        filterRegistrationBean.addUrlPatterns("/cart/*");
+        filterRegistrationBean.addUrlPatterns("/cart/*","/user/orderList","/user/addressList");
         return filterRegistrationBean;
     }
 }
